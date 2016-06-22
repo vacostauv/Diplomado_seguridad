@@ -26,7 +26,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Mi Página Web</a>
+            <a class="navbar-brand" href="#">${usuario}</a>
         </div>
     </nav>
     <div class="container-fluid">

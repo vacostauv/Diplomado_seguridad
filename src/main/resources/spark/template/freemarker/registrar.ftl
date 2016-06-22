@@ -35,18 +35,25 @@
                 <div class="page-header">
                     <h1>Registro de <small>Usuarios</small></h1>
                 </div>
+                <#if validador != "">
+                    <div class="alert alert-warning" role="alert">${validador}</div>
+                </#if>
                 <form action="registrar" method="POST">
                     <div class="form-group">
                       <label for="nombre">Nombre</label>
-                      <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre">
+                      <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre" value="${nombre}" required="required">
+                    </div>
+                    <div class="form-group">
+                      <label for="nombre">Apellidos</label>
+                      <input type="text" name="apellidos" class="form-control" id="nombre" placeholder="Apellidos" required="required">
                     </div>
                     <div class="form-group">
                       <label for="email">Correo</label>
-                      <input type="email" name="email" class="form-control" id="email" placeholder="Email">
+                      <input type="email" name="email" class="form-control" id="email" placeholder="Email" required="required">
                     </div>
                     <div class="form-group">
                       <label for="password">Password</label>
-                      <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+                      <input type="password" name="password" class="form-control" id="password" placeholder="Password" required="required">
                       <p class="help-block">Debe ser 5 números.</p>
                     </div>
                     <button type="submit" class="btn btn-primary">Registrar</button>
@@ -56,6 +63,9 @@
                  <div class="page-header">
                     <h1>Inicio de <small>Sesión</small></h1>
                 </div>
+                <#if mensaje != "">
+                    <div class="alert alert-warning" role="alert">${mensaje}</div>
+                </#if>
                 <form action="login" method="POST">
                     <div class="form-group">
                       <label for="email">Correo</label>
