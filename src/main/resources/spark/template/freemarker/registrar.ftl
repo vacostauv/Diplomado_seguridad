@@ -26,7 +26,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Mi Página Web</a>
+            <a class="navbar-brand" href="#">Mi Pagina Web</a>
         </div>
     </nav>
     <div class="container-fluid">
@@ -54,14 +54,14 @@
                     <div class="form-group">
                       <label for="password">Password</label>
                       <input type="password" name="password" class="form-control" id="password" placeholder="Password" required="required">
-                      <p class="help-block">Debe ser 5 números.</p>
+                      <p class="help-block">Debe ser 5 numeros.</p>
                     </div>
                     <button type="submit" class="btn btn-primary">Registrar</button>
                 </form>
             </div>
             <div class="col-md-6">
                  <div class="page-header">
-                    <h1>Inicio de <small>Sesión</small></h1>
+                    <h1>Inicio de <small>Sesion</small></h1>
                 </div>
                 <#if mensaje != "">
                     <div class="alert alert-warning" role="alert">${mensaje}</div>
@@ -76,7 +76,7 @@
                       <input type="password" name="password" class="form-control" id="password" placeholder="Password">
                     </div>
                     <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-                    <a class="btn btn-default">Recurperar Contraseña</a>
+                    <a class="btn btn-default">Recuperar Contrasena</a>
 
                 </form>
             </div>

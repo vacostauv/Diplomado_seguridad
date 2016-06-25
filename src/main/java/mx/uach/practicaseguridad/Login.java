@@ -42,20 +42,22 @@ public class Login {
          */
         post("/registrar", (req, res) -> {
             Map<String, Object> attributes = new HashMap<>();
-            
-            String nombre = req.queryParams("nombre");
+ 
+            String nombre =  req.queryParams("nombre");
+            String apellidos = req.queryParams("apellidos");
             String email = req.queryParams("email");
             String password = req.queryParams("password");
             String validador = "";
             String mensaje = "";
             
             if(nombre.equals("")){
-                //Falta el usuario
-                validador = "Por favor complete el campo nombre";
+                validador = "Debe teclear el nombre";
+            }else if (apellidos.equals("")){
+                validador = "Debe teclear  los apellidos";
             }else if (email.equals("")){
-                validador = "Por favor complete el campo email";
+                validador = "Debe teclear  email";
             }else if (password.equals("")){
-                validador = "Por favor complete el campo password";
+                validador = "Debe teclear password";
             }
             
             attributes.put("validador", validador);
